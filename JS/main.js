@@ -1,1 +1,2 @@
-alert("Hello World");
+window.alert();
+document.write('Hello Man');
