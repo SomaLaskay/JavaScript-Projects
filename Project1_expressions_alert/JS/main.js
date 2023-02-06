@@ -22,3 +22,6 @@ document.write(myName+" "+myAge+" "+myFavColor);
 var calc = 5+5;
 document.write("<br>"+calc);
 
+function changeColor() {
+    document.getElementById("btn1").style.backgroundColor = "green";
+}
