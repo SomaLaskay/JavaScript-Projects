@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Basic HTML</title>
+	<meta charset="utf-8">
+    <script src="JS/main.js"></script>
+    <style>
+        body {
+            background-color: rgb(75, 75, 75);
+        }
+
+        .center {
+            align-content: center;
+            text-align: center;
+        }
+
+        #Math {
+            background-color: dimgrey;
+            color: white;
+            line-height: 15pt;
+            font-size: 16pt;
+        }
+
+        h1 {
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Arithmetics</h1>
+        <input type="number" id="alpha" placeholder="First #" >
+        <button onclick="incrA()">+</button>
+        <button onclick="decrA()">-</button>
+        <button onclick="randA()">Random!</button>
+        <button onclick="negateA()" id="nA">Negate!</button>
+        <br>
+        <input type="number" id="beta" placeholder="Second #">
+        <button onclick="incrB()">+</button>
+        <button onclick="decrB()">-</button>
+        <button onclick="randB()">Random!</button>
+        <button onclick="negateB()" id="nB">Negate!</button>
+        <br>
+        <p id="Math">...result...</p>
+        <button onclick="addition()">Add!</button>
+        <button onclick="subtract()">Subtract!</button>
+        <button onclick="multiply()">Multiply!</button>
+        <button onclick="divide()">Divide!</button>
+        <button onclick="modulo()">Modulo!</button>
+    </div>
+</body>
+</html>
