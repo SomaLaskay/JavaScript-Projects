@@ -1,9 +1,22 @@
-//Basic dictionary
+//Basic dictionary + Duplicate key
 function dictRead() {
-    var dicto {
-        Job: "Project 1",
-        Quantity: 10,
-        Type: "basic"
+    let dicto = {
+        Job:"Project1",
+        Quantity:10,
+        Type:"basic",
+        Type:"advanced"
     };
-    document.getElementById("result").innerHTML = dicto.Job;
+    document.getElementById("result").innerHTML = dicto.Type;
+}
+
+//Basic dictionary with key deletion
+function del () {
+    let dicto = {
+        Job:"Project1",
+        Quantity:10,
+        Type:"basic",
+        Type:"advanced"
+    };
+    delete dicto.Type;
+    document.getElementById("result").innerHTML = dicto.Type;
 }
