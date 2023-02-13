@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Comparisons, type coercion</title>
+	<meta charset="utf-8">
+    <script src="JS/main.js"></script>
+    <style>
+        body {
+            background-color: rgb(90, 104, 124);
+        }
+
+        input[type=text] {
+            height: 20px;
+            width: 100px;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid aquamarine;
+            border-radius: 4px;
+        }
+
+        button {
+            height: 50px;
+            width: 120px;
+            text-align: center;
+            margin: 8px;
+            padding: 2px;
+            border-radius: 4px;
+            
+        }
+
+        button:hover {
+            font-weight: 600;
+            background-color: aquamarine;
+            box-shadow: 3px 3px 3px 3px rgb(255, 251, 0);
+        }
+
+        table {
+            border: 2px solid aqua;
+        }
+
+        .center {
+            text-align: center;
+            width: 100%;
+            padding: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        #Math {
+            background-color: dimgrey;
+            color: white;
+            line-height: 15pt;
+            font-size: 16pt;
+        }
+
+        h1 {
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table class="center">
+            <tr><!-- FIRST ROW -->
+                <td>
+                    <h1>Type Check, div by 0</h1>
+                    <p id="result">Result...</p>
+                    <br>
+                    <button onclick="typeCheck()">Check the type!</button>
+                    <button onclick="divO()">Div by 0!</button>
+                </td>
+                <td>
+                    <h1>Check isNaN</h1>
+                    <p id="result2">Result...</p>
+                    <input type="text" id="entry" placeholder="Enter some data here"><br>
+                    <button onclick="checkNan()">Check isNaN!</button>
+                    <button onclick="posInf()">Display +Infinity!</button>
+                    <button onclick="negInf()">Display -Infinity!</button>
+                </td>
+                <td>
+                    <h1>Boolean</h1>
+                    <p id="result3">Result...</p>
+                    <input type="text" id="n1" placeholder="Number 1"><strong id="relate">...</strong>
+                    <input type="text" id="n2" placeholder="Number 2"><br>
+                    <button onclick="checkGreater()">Greater?</button>
+                    <button onclick="checkLess()">Less?</button>
+                </td>
+                <td>
+                    <h1>Type coercion</h1>
+                    <p id="result4">Result...</p>
+                    <input type="text" id="data" placeholder="Data"><br>
+                    <button onclick="coert()">Let's Go!</button>
+                </td>
+            </tr>
+            <tr><!-- SECOND ROW -->
+                <td>
+                    <h1>Boolean to the Console</h1>
+                    <p id="result5">Result...</p>
+                    <button onclick="booleConsole()">Let's Go!</button>
+                </td>
+                <td>
+                    <h1>Double "="</h1>
+                    <p id="result6">Result...</p>
+                    <input type="text" id="input1" placeholder="Input 1"><strong id="dbleq"> . . . </strong>
+                    <input type="text" id="input2" placeholder="Input 2"><br>
+                    <button onclick="booleCheq()">Let's Go!</button>
+                </td>
+                <td>
+                    <h1>Triple "="</h1>
+                    <p id="result7">Result...</p>
+                    <input type="text" id="Trinput1" placeholder="Input 1"><strong id="dbleq"> . . . </strong>
+                    <input type="text" id="Trinput2" placeholder="Input 2"><br>
+                    <button onclick="booleCheqTriple()">Let's Go!</button>
+                </td>
+                <td>
+                    <h1>AND and OR operators</h1>
+                    <p id="result8">Result...</p>
+                    This <input type="checkbox" id="cb1"><br>
+                    That <input type="checkbox" id="cb2"><br>
+                    This one lies <input type="checkbox" id="cb3"><br>
+                    <button onclick="checkAND()">Check AND!</button>
+                    <button onclick="checkOR()">Check OR!</button>
+                    <button onclick="checkNOT()">Check NOT!</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
