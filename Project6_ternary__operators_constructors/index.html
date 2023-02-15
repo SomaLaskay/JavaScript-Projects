@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ternary operators, Constructors</title>
+	<meta charset="utf-8">
+    <script src="JS/main.js"></script>
+    <style>
+        body {
+            background-color: rgb(116, 127, 142);
+        }
+
+        input[type=text] {
+            height: 20px;
+            width: 100px;
+            text-align: center;
+            margin: 2px;
+            padding: 2px;
+            border: 1px solid tan;
+            border-radius: 4px;
+        }
+
+        button {
+            height: 30px;
+            width: 160px;
+            text-align: center;
+            margin: 5px;
+            padding: 4px;
+            border-radius: 4px;
+            
+        }
+
+        button:hover {
+            background-color: beige;
+            box-shadow: 2px 2px 2px 1px darkgray;
+        }
+
+        table {
+            border: 1px solid beige;
+            width: 60%;
+        }
+
+        td {
+            border: 1px dashed lightgrey;
+        }
+
+        .center {
+            text-align: center;
+            width: 95%;
+            padding: 2%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            color: white;
+            font-size: 1.05em;
+        }
+
+        #Math {
+            background-color: dimgrey;
+            color: white;
+            line-height: 15pt;
+            font-size: 16pt;
+        }
+
+        h1 {
+            color: beige;
+        }
+
+        #ternNo {
+            font-size: 1.5em;
+            color: coral;
+            text-shadow: 0px 0px 3px rgb(230, 230, 230);
+        }
+
+        #ternOk {
+            font-size: 1.5em;
+            color: yellowgreen;
+            text-shadow: 0px 0px 3px rgb(230, 230, 230);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table class="center">
+            <tr><!-- FIRST ROW -->
+                <td>
+                    <h1>Ternary operator</h1>
+                    <p id="result1">You have to be over 18 to vote and to drink alcohol!</p>
+                    <br>
+                    <p>Hold are you?</p>
+                    <input type="number" id="ternInput1" placeholder="Your age"><br>
+                    <button onclick="ternCheck()">Check to Vote/Drink!</button>
+                </td>
+                <td>
+                    <h1>Own constructor</h1>
+                    <p id="result3"> . . . </p>
+                    <button onclick="displayMovie()">Display!</button>
+                </td>
+            </tr>
+            <tr><!-- SECOND ROW -->
+                <td>
+                    <h1>Constructors</h1>
+                    <p id="result2"> . . . </p>
+                    <button onclick="myFunction()">Erik's car!</button>
+                    <button onclick="myFunction2()">Soma's car!</button>
+                </td>
+                <td>
+                    <h1>Nested functions</h1>
+                    <p id="result5"> . . . </p>
+                    <button onclick="nestFunc()">Add a random number!</button>
+                </td>
+            </tr>
+            <tr><!-- THIRD ROW -->
+                <td>
+                    <h1>Keywords</h1>
+                    <p id="result4"> . . . </p>
+                    <button onclick="keywordFunc()">Display: "const"</button>
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
