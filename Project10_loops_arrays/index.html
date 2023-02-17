@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Loops & Arrays</title>
+	<meta charset="utf-8">
+    <script src="JS/main.js"></script>
+    <style>
+        body {
+            background-color: rgb(116, 127, 142);
+        }
+
+        input[type=text] {
+            height: 20px;
+            width: 100px;
+            text-align: center;
+            margin: 2px;
+            padding: 2px;
+            border: 1px solid tan;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #f5f5f5;
+            color: #2d3b45;
+            border: 1px solid;
+            border-color: #c7cdd1;
+            border-radius: 3px;
+            transition: background-color .2s ease-in-out;
+            display: inline-block;
+            position: relative;
+            padding: 8px 14px;
+            margin: 5px;
+            font-size: 16px;
+            font-size: 1rem;
+            line-height: 20px;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            text-decoration: none;
+            overflow: hidden;
+            text-shadow: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        button:hover {
+            background-color: rgb(188, 188, 188);
+            color: black;
+        }
+
+        table {
+            border: 1px solid beige;
+            width: 60%;
+        }
+
+        td {
+            border: 1px dashed lightgrey;
+        }
+
+        .center {
+            text-align: center;
+            width: 95%;
+            padding: 2%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            color: white;
+            font-size: 1.05em;
+        }
+
+        h1 {
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table class="center">
+            <tr><!-- FIRST ROW -->
+                <td>
+                    <h1>WHILE loop</h1>
+                    <p id="Loop"> . . . </p>
+                    <button onclick="callLoop()">Go, make a loop!</button>
+                </td>
+                <td>
+                    <h1>String length property</h1>
+                    <p id="result1"> How long is the Mississippi? </p>
+                    <button onclick="howLong()">Tell me!</button>
+                </td>
+                <td>
+                    <h1>Verticalize with FOR loop</h1>
+                    <p id="result2"> Give me a word and I'll write it out vertically! </p>
+                    <input type="text" id="myWord" placeholder="your word here"><br>
+                    <button onclick="verticalize()">Do it!</button>
+                </td>
+            </tr>
+            <tr><!-- SECOND ROW -->
+                <td>
+                    <h1>Arrays: Shopping list</h1>
+                    <p id="result3"> . . . </p>
+                    <button onclick="lister()">Buy these!</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
