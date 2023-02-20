@@ -37,3 +37,64 @@ function lister () {
     document.getElementById("result3").innerHTML = 
     result;
 }
+
+// Const function
+function constant_function () {
+    const myCake = {
+        size: 12, 
+        shape:"square", 
+        flavour:"orange-cocoa",
+        decoration: "sugar flowers"
+    };
+    document.getElementById("result4").innerHTML = 
+    myCake.size+"-inch cake with "+myCake.flavour+" flavour. This beautiful "+
+    myCake.shape+"-shaped cake has additional "+myCake.decoration+" on the top.";
+}
+
+// Let keyword with method
+function printJob () {
+    let myPrint = {
+        size: "A4",
+        frontColors: 4,
+        backColors: 4,
+        pages: 2,
+        plates: function() {
+            return (this.frontColors+this.backColors);
+        }
+    };
+    document.getElementById("result5").innerHTML = 
+    "Next job is: <br> - "+myPrint.pages+" pages<br> - "+
+    myPrint.size+" size<br> - "+myPrint.frontColors+"+"+myPrint.backColors+" colors<br> - "+
+    myPrint.plates()+" plates will be needed."
+}
+
+// Break
+function breakMyHeart () {
+    let word = "heart";
+    let result = "";
+    for (i = 0; i < word.length; i++) {
+        if (word[i] === "r") {
+            result += " ";
+            break;
+        };
+        result += word[i];
+    };
+    document.getElementById("result6").innerHTML = 
+    result;
+}
+
+// Continue
+function contMyHeart () {
+    let word = "heart";
+    let result = "";
+    for (i = 0; i < word.length; i++) {
+        if (word[i] === "r") {
+            result += " ";
+            continue; 
+        };
+        result += word[i];
+    };
+    document.getElementById("result6").innerHTML = 
+    result;
+}
+
