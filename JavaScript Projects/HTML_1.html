@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Loops & Arrays</title>
+	<meta charset="utf-8">
+    <script src="JavaScript/JavaScript_1.js" async></script>
+    <style>
+        body {
+            background-color: rgb(116, 127, 142);
+        }
+
+        input[type=text] {
+            height: 20px;
+            width: 100px;
+            text-align: center;
+            margin: 2px;
+            padding: 2px;
+            border: 1px solid tan;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #f5f5f5;
+            color: #2d3b45;
+            border: 1px solid;
+            border-color: #c7cdd1;
+            border-radius: 3px;
+            transition: background-color .2s ease-in-out;
+            display: inline-block;
+            position: relative;
+            padding: 8px 14px;
+            margin: 5px;
+            font-size: 16px;
+            font-size: 1rem;
+            line-height: 20px;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            text-decoration: none;
+            overflow: hidden;
+            text-shadow: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        button:hover {
+            background-color: rgb(188, 188, 188);
+            color: black;
+        }
+
+        table {
+            border: 1px solid beige;
+            width: 60%;
+        }
+
+        td {
+            border: 1px dashed lightgrey;
+        }
+
+        .center {
+            text-align: center;
+            width: 95%;
+            padding: 2%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            color: white;
+            font-size: 1.05em;
+        }
+
+        h1 {
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table class="center">
+            <tr><!-- FIRST ROW -->
+                <td>
+                    <h1>SWITCH statement</h1>
+                    <p id="switchMe"> What drink can I get you? Coke, Fanta or Sprite? </p>
+                    <input type="text" id="myInput">
+                    <button onclick="mySwitch()">Do it!</button>
+                </td>
+                <td>
+                    <h1 class="myClass">ByClassName</h1>
+                    <p class="myClass"> Elements by Class name </p>
+                    <button onclick="gebcnOne()">Do it to the first!!</button>
+                    <button onclick="gebcnAll()">Do it to All!</button>
+                </td>
+            </tr>
+            <tr><!-- SECOND ROW -->
+                <td colspan="2">
+                    <h1>Canvas</h1>
+                    <canvas id="myCanvas" width="200" height="200" style="border: 2px solid tan"></canvas><br>
+                    <button onclick="makeGrad()">Gradient!</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

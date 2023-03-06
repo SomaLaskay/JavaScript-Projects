@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Arrow Function</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content='width=device-width, initial-scale=1.0'>
+    <script>
+        let myString = (thingy) => "This is an Arrow Function with this argument: "+thingy;
+
+        function myFunc () {
+            document.getElementById("myStuff").innerHTML = myString("myArg")+" so they both works!";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Arrow Function</h1>
+        <p id="myStuff">Results here.</p>
+        <button onclick="myFunc()">Normal Function</button>
+    </div>
+</body>
+</html>

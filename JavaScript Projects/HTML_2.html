@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Form Project</title>
+	<meta charset="utf-8">
+    <script src="JavaScript/JavaScript_2.js" async></script>
+    <link rel="stylesheet" href="CSS/CSS_2.css">
+
+</head>
+<body>
+    <div class="center">
+        <h1>Contact Us!</h1>
+        <form action="" method="post">
+            <p id="switchMe"> Please, fill in the boxes respectively. </p>
+            <input type="text" class="textField" id="fname" placeholder="First Name" required><br>
+            <input type="text" class="textField" id="lname" placeholder="Last Name" required><br>
+            <input type="text" class="textField" id="email" placeholder="E-mail" required><br>
+            <input onblur="checkMails()" type="text" class="textField" id="emailConf" placeholder="Confirm E-mail" required><br>
+            <input type="submit" id="submit">
+        </form>            
+    </div>
+</body>
+</html>
