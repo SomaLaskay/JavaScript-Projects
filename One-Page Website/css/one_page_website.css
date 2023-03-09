@@ -1,0 +1,164 @@
+body {
+    background-image: url("../image/bg-pattern.jpg");
+    background-attachment: fixed;
+}
+
+/*===================###===================
+HEADING STYLE
+===================###===================*/
+#home {
+    background-color: rgba(240, 128, 128, .7);
+    color: beige;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 85px;
+    line-height: 30pt;
+}
+
+#home h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24pt;
+}
+
+/*===================###===================
+NAVBAR STYLE
+===================###===================*/
+.navbar {
+    position: sticky;
+    height: 50px;
+    width: 60%;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.navbar a {
+    color: lightcoral;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 6px 20px black;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: 15px;
+    margin: 10px;
+    text-decoration: none;
+    line-height: 36pt;
+}
+
+.navbar a:hover {
+    color: coral;
+    background-color: beige;
+    box-shadow: 5px 5px lightcoral;
+    font-weight: 400;
+}
+
+/*===================###===================
+CONTENT STYLE
+===================###===================*/
+.emb-video {
+    text-align: center;
+    margin: 30px;
+}
+
+.emb-video iframe {
+    width: 560px;
+    height: 315px;
+    box-shadow: 5px 5px lightcoral;
+}
+
+.article {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24pt;
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.myIMG {
+    border: 2px dashed lightcoral;
+    border-radius: 5px;
+    box-shadow: 5px 5px lightcoral;
+    margin: 15px;
+    top: 0%;
+    left: 0%;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4em;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*===================###===================
+CONTACT STYLE
+===================###===================*/
+#contact {
+    text-align: center;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    line-height: 30pt;
+}
+
+#contact li {
+    list-style-type: none;
+}
+
+#contact input[type="text"] {
+    width: 250px;
+    height: 25px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px dashed #8B5E9F;
+    border-radius: 5px;
+}
+
+#contact input[type="text"]:hover {
+    box-shadow: 5px 5px lightcoral;
+    background-color: beige;
+    border-color: lightcoral;
+    font-weight: 700;
+}
+
+input[type="submit"] {
+    margin: 10px;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 5px 5px lightcoral;
+}
+
+/*===================###===================
+FOOTER STYLE
+===================###===================*/
+.footer {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 14pt;
+    line-height: 35px;
+    background-color: rgba(240, 128, 128, .3);
+}

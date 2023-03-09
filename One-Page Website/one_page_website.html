@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>OnePager</title>
+	<meta charset="utf-8">
+	<script src="./JS/one_page_website.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+	<link rel="stylesheet" type="text/css" href="./css/modal.css">
+</head>
+<body>
+
+	<!-- HEADING -->
+	<section id="home">
+		<div>
+			<h1>3D Printing <br> Technology &nbsp; | &nbsp; Purpose</h1>
+		</div>
+	</section>
+	<!-- END HEADING -->
+	
+	<!-- NAV -->
+	<div class="navbar">
+		<a href="#home">HOME</a>
+		<a href="#fdm">FDM</a>
+		<a href="#sla">SLA</a>
+		<a href="#sls">SLS</a>
+		<a href="#contact">CONTACT</a>
+	</div>
+	<!-- END NAV -->
+	<!-- VIDEO -->
+		<div class="emb-video">
+			<iframe src="https://www.youtube.com/embed/bcTzyx35odY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	<!-- END VIDEO -->
+	<!-- FDM -->
+	<div id="fdm" class="article">
+		<h2>Fused Deposition Modeling (FDM)</h2>
+		<table>
+			<tr>
+				<td><img src="./image/thumb/thumbnail_1.png" alt="FDM photo" onclick="openModal();currentSlide(1)" class="myIMG"></td>
+				<td>
+					<p>
+						FDM (Fused Deposition Modeling) originally invented and patented by Stratasys founder Scott Crump in 1989. Fast forward to the present, FDM is now the most commonly used 3D printing process. <br><br>
+						While FDM printers produce a mechanical bond between layers, SLA 3D printers create chemical bonds by cross-linking photopolymers across layers, resulting in fully dense parts that are water and airtight. <br><br>
+						Disadvantages of fused deposition modeling
+						Not only does FDM's relatively thick layer height mean that it's not ideal for parts with small details, but it also means that finished products will likely have rough surfaces and require post-processing to achieve a smoother finish.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!-- END FDM -->
+	
+	<!-- SLA -->
+	<div id="sla" class="article">
+		<h2>Stereolithography (SLA)</h2>
+		<table>
+			<tr>
+				<td>
+					<p>
+						Stereolithography (SLA or SL; also known as vat photopolymerisation, optical fabrication, photo-solidification, or resin printing) is a form of 3D printing technology used for creating models, prototypes, patterns, and production parts in a layer by layer fashion using photochemical processes by which light causes chemical monomers and oligomers to cross-link together to form polymers. <br><br>
+						Those polymers then make up the body of a three-dimensional solid. Research in the area had been conducted during the 1970s, but the term was coined by Chuck Hull in 1984 when he applied for a patent on the process, which was granted in 1986.<br><br>
+						Stereolithography can be used to create prototypes for products in development, medical models, and computer hardware, as well as in many other applications. While stereolithography is fast and can produce almost any design, it can be expensive.
+						
+					</p>
+				</td>
+				<td><img src="./image/thumb/thumbnail_2.png" alt="SLA photo" onclick="openModal();currentSlide(2)" class="myIMG"></td>
+			</tr>
+		</table>
+	</div>
+	<!-- END SLA -->
+	<!-- SLS -->
+	<div id="sls" class="article">
+		<h2>Selective laser sintering (SLS)</h2>
+		<table>
+			<tr>
+				<td><img src="./image/thumb/thumbnail_3.png" alt="SLS photo" onclick="openModal();currentSlide(3)" class="myIMG"></td>
+				<td>
+					<p>
+						Selective laser sintering (SLS) is a 3D printing process that uses a laser to sinter small particles of powder — typically nylon — to form solid layers. Although the process is mostly used for prototyping, SLS production has increased in recent years, with applications in areas like aerospace, electronics, and consumer goods. <br><br>
+						Advantages of SLS include the ability to print without support structures, since the partially printed object is always surrounded by unused powder, while nylon printed parts offer high strength and chemical resistance. The process is primarily used industrially, but some desktop machines ($5,000+) are also available.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+	<!-- END SLS -->
+	<!-- CONTACT -->
+		<div id="contact">
+			<h4>If you have any question or need advice, get in touch with us or subscribe to our weekly newsletter!</h4>
+			<form action="" method="POST">
+				<ul>
+					<li><input type="text" placeholder="First Name"></li>
+					<li><input type="text" placeholder="Last Name"></li>
+					<li><input type="text" placeholder="E-Mail Address"></li>
+					<li><input type="Submit" value="Submit"></li>
+				</ul>
+			</form>
+		</div>
+	<!-- END CONTACT -->
+	<!-- FOOTER -->
+		<div class="footer">
+			www.freedeeprintee.com &nbsp; | &nbsp; &copy;2023
+		</div>
+	<!-- END FOOTER -->
+
+	<!-- MODAL LIGHTBOX -->
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 3</div>
+		<img src="./image/thumb/thumbnail_1.png" style="width:100%" onclick="openModal();currentSlide(1)">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 3</div>
+		<img src="./image/thumb/thumbnail_2.png" style="width:100%" onclick="openModal();currentSlide(2)">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 3</div>
+		<img src="./image/thumb/thumbnail_3.png" style="width:100%" onclick="openModal();currentSlide(3)">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./image/thumb/thumbnail_1.png" onclick="currentSlide(1)" alt="Nature">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./image/thumb/thumbnail_2.png" onclick="currentSlide(2)" alt="Snow">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./image/thumb/thumbnail_3.png" onclick="currentSlide(3)" alt="Mountains">
+	  </div>
+
+	</div>
+  </div>
+  <!-- END MODAL LIGHT BOX -->
+
+
+	
+</body>
+</html>
