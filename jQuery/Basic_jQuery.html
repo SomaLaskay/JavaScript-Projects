@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic jQuery</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- DOM ELEMENTS -->
+    <p id="demo">This paragraph is going to be changed if the button below is clicked.</p>
+    <button id="myBtn">This!</button>
+    <button id="fader">Fade it!</button>
+    <!-- END DOM ELEMENTS -->
+
+    <!-- jQUERY -->
+    <script>
+        // Selecting the element to use as a trigger.
+        $("#myBtn").click(function() {  
+            // Selecting the element to manupulate. 
+            // empty() clears the content and append() sets the new content.
+            $("#demo").empty().append("Now it's changed.");         
+        });
+
+        // Selecting the element with the ID "fader" to trigger the function
+        // to fadeOut() the element with the ID "demo".
+        $("#fader").click( function () {
+            $("#demo").fadeOut(1200);
+        });
+    </script>
+    <!-- END jQUERY -->
+
+</body>
+</html>
