@@ -22,3 +22,6 @@ Tic Tac Toe project
 ToDo project
 Portfolio site project
 JSON project
+XML
+Async
+Console debug challenge
