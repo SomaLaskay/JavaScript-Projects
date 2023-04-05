@@ -20,6 +20,7 @@ Bootstrap project
 Arrow function challenge
 Tic Tac Toe project
 ToDo project
+Calculator project
 Portfolio site project
 JSON project
 XML
