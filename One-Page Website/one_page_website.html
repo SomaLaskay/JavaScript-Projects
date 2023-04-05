@@ -6,8 +6,82 @@
 	<script src="./JS/one_page_website.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
 	<link rel="stylesheet" type="text/css" href="./css/modal.css">
+	<style>
+        body {
+            opacity: 1;
+            transition: 3s opacity;
+        }
+
+        body.fade-out {
+            opacity: 0;
+            transition: none;
+        }
+
+		.msgQ {
+			color: coral;
+		}
+
+		.msgName {
+			height: 20px;
+			padding: 6px;
+		}
+
+		.btnMsgX {
+			font-weight: 700;
+			color: red;
+			align-items: right;
+		}
+
+		.msgItems {
+			z-index: 2;
+			opacity: 1;
+		}
+
+		#btnHelp {
+			position: sticky;
+			position: -webkit-sticky;
+			width: 100px;
+			height: 50px;
+			bottom: 20px;
+			right: 20px;
+			transform: translate(92vw, 0vw);
+		}
+
+		.msgText {
+			height: 200px;
+			width: 169px;
+			margin-top: 5px;
+			padding: 6px;
+			resize: none;
+		}
+
+		.msgCont {
+			display: none;
+			text-align: center;
+			justify-content: center;
+			padding: 2px;
+			z-index: 1;
+			width: 200px;
+			height: 390px;
+			bottom: 20px;
+			right: 20px;
+			transform: translate(90vw, 0);
+			position: sticky;
+			position: -webkit-sticky;
+			border-radius: 8px;
+			background-color: beige;
+			opacity: 0.85;
+		}
+
+    </style>
 </head>
 <body>
+	<script>
+        document.body.classList.add('fade-out');
+        window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.remove('fade-out');
+        });
+    </script>
 
 	<!-- HEADING -->
 	<section id="home">
@@ -150,6 +224,43 @@
   </div>
   <!-- END MODAL LIGHT BOX -->
 
+  <!-- MSG PANEL -->
+
+  <div class="msgCont" id="msgCont">
+	<div class="msgItems">
+		<h3 class="msgQ">How can we help?</h3>
+		<form action="#" method="post">
+			<input type="text" class="msgName" placeholder="Your Name"><br>
+			<textarea class="msgText" placeholder="Your Message"></textarea><br>
+			<input type="submit" class="btnSubmit">
+			<input type="reset" class="btnReset"><br>
+			<button onclick="msgHelp()" class="btnMsgX">X</button>
+		</form>
+	</div>
+  </div>
+  <button id="btnHelp" onclick="msgHelp()">I need help!</button>
+
+  
+
+  <script async>
+	let panelState = 0;
+	let msgCont = document.getElementById("msgCont");
+	let btnHelp = document.getElementById("btnHelp");
+
+	function msgHelp () {
+		if ( panelState === 0 ) {
+			msgCont.style.display = "block";
+			btnHelp.style.display = "none";
+			panelState = 1;
+		} else {
+			msgCont.style.display = "none";
+			btnHelp.style.display = "block";
+			panelState = 0;
+		}
+	}
+  </script>
+
+  <!-- END MSG PANEL -->
 
 	
 </body>

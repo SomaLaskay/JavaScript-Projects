@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON.Stringify(), JSON.Parse() and localStorage</title>
+</head>
+<body>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+    <script>
+        const videoGames = {
+            title: "Mortal Kombat",
+            year: 1992,
+            genre: "fighting",
+        };
+
+        let myJSON = JSON.stringify(videoGames);
+        let myJS = JSON.parse(myJSON);
+        localStorage.setItem("Title", myJS.title);
+        document.getElementById("output1").innerHTML = "<b>Stringify:</b> "+myJSON;
+        document.getElementById("output2").innerHTML = "<b>Parse:</b> "+myJS.title+" is a "+myJS.genre+" video game from "+myJS.year+".";
+        document.getElementById("output3").innerHTML = "<b>Local Storage:</b> "+localStorage.getItem("Title");
+
+    </script>
+    
+</body>
+</html>

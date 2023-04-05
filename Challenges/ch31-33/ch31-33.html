@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 31, 32, 33</title>
+    
+    <style>
+        #formContainer {
+        position: fixed;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: none;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        background-color: rgb(63, 142, 153);
+        width: 20%;
+        min-width: 500px;
+        height: 10vh;
+        z-index: 1;
+        padding: 50px;
+        animation: fall 1s forwards ease;
+        border-radius: 0 0 10px 10px;
+        }
+
+        @keyframes fall {
+            from { top: -100%; }
+            to { top: 0; }
+        }
+
+        @keyframes lift {
+            from { top: 0; }
+            to { top: -100% }
+        }
+
+        #button {
+            justify-content: center;
+            display: flex;
+            z-index: 0;
+        }
+
+        input {
+            margin: 2px;
+            width: 30%;
+            height: 20px;
+            opacity: 1;
+        }
+
+        button {
+            width: 10%;
+        }
+
+    
+        .zoom {
+            padding: 50px;
+            background-image: url('https://images2.fanpop.com/image/photos/8600000/random-animals-animals-8675984-377-442.jpg');
+            transition: transform .2s;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+    
+        .zoom:hover {
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="formContainer">
+        <input type="text" placeholder="First Name"><br>
+        <input type="text" placeholder="Last Name"><br>
+        <input type="text" placeholder="Email"><br>
+        <input type="text" placeholder="Phone"><br>
+        <input type="submit" onclick="panelSwitch()">
+    </div>
+
+    <div class="zoom" onclick="panelSwitch()"></div>
+    <div><h1>Click on the photo to adopt me!</h1></div>
+
+
+    <script>
+        let panelState = 0;
+        let formCont = document.getElementById("formContainer");
+
+        function panelSwitch() {
+            if (panelState === 0) {
+                formCont.style.animation="fall 1s forwards ease-in-out";
+                formCont.style.display="block";
+                panelState = 1;
+            } else {
+                formCont.style.animation="lift 1s forwards ease-in-out";
+                setTimeout(() => {
+                    formCont.style.display="none";
+                }, 1000);
+                panelState = 0;
+            }
+        }
+    </script>
+</body>
+</html>

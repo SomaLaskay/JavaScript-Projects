@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>TeaCup Contact</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+        <script src="./js/index.js" async></script>
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">Introduction</a>
+            <a href="#GitHub">Private Repository</a>
+            <a href="#Contact" onclick="formOpen()">Getting in touch</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/video/Typing.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">TeaCup Contact</h1>
+            <strong>
+                <p class="center">
+                    <q>
+						An AI could create certain things, but it's never going to be a human with feelings, imagination and passion.
+						<br> - G. S. Laskay
+					</q>
+				</p>
+                <p class="intro">
+                    My name is Soma Laskay. Welcome to my portfolio website.<br> If you are ready for something that's gonna raise your business off the crowd,<br> there's no time to waste!
+                    <br>
+                    <br> Now make yourself home, grab a cup of tea and let's talk about the website of your dreams! 
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_1">
+                <a href="https://www.linkedin.com/in/soma-laskay-3b57bb132/" target="_blank"><img src="images/linkedinLogo.png" class="logo" alt="LinkedIn Logo"></a>
+            </div>
+
+            <!-- Middle column -->
+            <div class="Column_2">
+                <h1>Bio</h1>
+                <p class="bio">
+                    I am a software developer who loves to code! As a father of three, I enjoy time with my family and traveling. 
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python and more. 
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+            
+            <!--Right column-->
+            <div class="Column_3">
+                <img src="./images/photo1.png" class="photo" alt="LinkedIn">
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <a href="https://github.com/SomaLaskay/JavaScript-Projects" target="_blank"><img src="./images/githubLogo.png" class="logo" alt="GitHub Logo"></a>
+            </div>
+
+            <!-- Middle column -->
+            <div class="Column_2">
+                <h1>GitHub</h1>
+                <p class="repo-text">
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/soma-laskay-3b57bb132" target="_blank">The Tech Academy Github</a></p>
+                </p>
+            </div>
+
+            <!--Right column-->
+            <div class="Column_3">
+                <a href="#" target="_blank">
+                <img src="images/photo2.png" class="photo" alt="GitHub"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!-- Left column-->
+            <div class="Column_1">
+                <a href="https://discord.gg/DDkXZuGt" target="_blank"><img src="images/discordLogo.png" class="logo" alt="Discord"></a>
+            </div>
+
+            <!-- Middle column -->
+            <div class="Column_2">
+                
+				
+            </div>
+
+            <!-- Right column-->
+            <div class="Column_3">
+                <img src="./images/photo3.png" class="photo" alt="Discord">
+            </div>
+
+        </div>
+        <!-- POPUP FORM -->
+        <div class="formContainer" id="formPanel">
+            <h1>Contact</h1>
+            <!--This specifies where and how to send the form data; we are leaving it blank-->
+            <form action="https://formspree.io/f/mayzqpzv" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                <label>Name:</label>
+                <input type="text" placeholder="Please enter your name here">
+                <label>Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <label>Message:</label>
+                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                <input type="submit" value="SUBMIT">
+                <input type="button" id="formCancelBtn" value="CANCEL" onclick="formClose()">
+            </form>    
+        </div>
+
+        <!-- FORM BUTTON -->
+        <div>
+            <button class="formBtn" id="formBtn" onclick="formOpen()">CONTACT</button>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy TeaCup Contact Ltd., <a href="https://www.learncodinganywhere.com/" target="_blank">TeaCup Contact</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
